@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-screen game container */
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Background */
+.background {
+    background-image: url('https://wallpapers.com/images/hd/flappy-bird-background-gecj5m4a9yhhjp87.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+/* Pipes */
+.pipe {
+    position: absolute;
+    width: 6vw;
+    height: 25vh;
+    background: radial-gradient(lightgreen, green);
+    z-index: 1;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+/* Bird */
+.bird {
+    width: 8vh;
+    height: 8vh;
+    position: absolute;
+    z-index: 10;
+    top: 40vh;
+    left: 20vw;
+    transition: transform 0.1s ease-in-out;
+}
+
+/* Message Box */
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 2em;
+    text-align: center;
+    border: 6px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 100;
+}
+
+/* Game Over Message */
+.message_style {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: red;
+    padding: 20px;
+    border: 3px solid red;
+}
+
+/* Score */
+.score {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 50;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .bird {
+        width: 6vh;
+        height: 6vh;
+    }
+
+    .message {
+        font-size: 1.5em;
+    }
+
+    .score {
+        font-size: 1.5em;
+        padding: 8px;
+    }
+
+    .pipe {
+        width: 8vw;
+        height: 20vh;
+    }
+}
