@@ -22,7 +22,7 @@ What you need to install the software:
 To get the game running locally, follow these steps:
 
 1. Clone the GitHub repository to your local machine:
-   
+   ```bash
    git clone https://github.com/yourusername/flappy-bird-clone.git
 2.Navigate to the project directory:
     ```bash
