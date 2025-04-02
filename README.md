@@ -52,7 +52,7 @@ Contributions make the open-source community such a fantastic place to learn, in
 
 ## Authors
 
-- **[Your Name]** - *Initial work* - [YourUsername](https://github.com/YourUsername)
+- **Jaya Arora** - [Jaya242- ](https://github.com/YourUsername)
 
 ## License
 
